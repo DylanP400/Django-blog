@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
@@ -51,6 +54,9 @@ INSTALLED_APPS = [
 ]
 
 SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -81,6 +87,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'codestar.wsgi.application'
+
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
 # Database
